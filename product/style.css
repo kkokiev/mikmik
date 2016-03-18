@@ -2887,10 +2887,6 @@ img {
   width: 100%;
   text-align: center;
 }
-.carousel__item-img-wrap:hover,
-.carousel__item-img-wrap:focus {
-  opacity: 0.8;
-}
 .carousel__item-img-inner-wrap {
   display: table-cell;
   height: 176px;
