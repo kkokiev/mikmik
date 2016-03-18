@@ -1,0 +1,117 @@
+// Clear the float on any element.
+clearfix()
+	&:after
+		display table
+		clear both
+		content ''
+
+bg-image()
+	background-color transparent
+	background-position center center
+	background-repeat no-repeat
+	background-size cover
+
+
+
+// Fix no working `-webkit-text-size-adjust: 100%;` in Android.
+fix-text-size-adjust()
+	background-image linear-gradient(transparent, transparent)
+
+// Set element size
+size($width, $height = $width)
+	width $width
+	height $height
+
+// Set margin on left & right
+margin-x($margin)
+	margin-left $margin
+	margin-right $margin
+
+// Set margin on top & bottom
+margin-y($margin)
+	margin-top $margin
+	margin-bottom $margin
+
+// Set pading on left & right
+padding-x($padding)
+	padding-left $padding
+	padding-right $padding
+
+// Set padding on top & bottom
+padding-y($padding)
+	padding-top $padding
+	padding-bottom $padding
+
+border-y($border)
+	border-top $border
+	border-bottom $border
+
+border-radius($n)
+	-webkit-border-radius $n
+	-moz-border-radius $n
+	border-radius $n
+
+
+//size often used in this project
+letter-spacing()
+	letter-spacing 0em
+
+tr($time){
+	-webkit-transition all $time ease
+	-moz-transition all $time ease
+	-o-transition all $time ease
+	transition all $time ease
+}
+
+opacity-light(){
+	opacity .8
+}
+
+opacity-strong(){
+	opacity .7
+}
+
+/**
+ * rem with fallback to px
+ *
+ * Use px as unit and only within a property.
+ * Default root font-size is standard 10px.
+ *
+ * Example:
+ * p {
+ *   font-size: rem(18px);
+ *   box-shadow: 0 0 rem(7px) #000;
+ * }
+ * Output:
+ * p {
+ *   font-size: 18px;
+ *   font-size: 1.125rem;
+ *   box-shadow: 0 0 7px #000;
+ *   box-shadow: 0 0 0.4375rem #000;
+ * }
+ */
+
+rem(n, root = 10px) {
+  unless current-property {
+	error('rem() must be used within a property');
+  }
+
+  unless unit(n) is 'px' and unit(root) is 'px' {
+	error('Please use px as unit');
+  }
+
+  replace(expr, str, val) {
+	expr = clone(expr);
+
+	for e, i in expr {
+	  if str == e {
+		expr[i] = val;
+	  }
+	}
+
+	return expr;
+  }
+
+  add-property(current-property[0], replace(current-property[1], '__CALL__', n));
+  unit(round((n / root), 3), s('rem'));
+}

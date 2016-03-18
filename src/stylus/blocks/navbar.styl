@@ -1,0 +1,40 @@
+.navbar
+
+	&__container
+		color light
+		text-align center
+		background brand-dark
+		border-top 4px solid brand-light-2
+
+
+	&__btn-wrap
+		clearfix()
+
+	&__menu-btn
+		float right
+		display none
+		margin-top 10px
+		margin-right 20px
+		margin-bottom 10px
+		height 30px
+		width 40px
+		text-decoration none
+
+		+below(large)
+			display block
+
+		&:hover,
+		&:focus
+			span
+				background brand-light-1
+
+		span
+			display block
+			height 6px
+			width 100%
+			margin-bottom 6px
+			background light
+			tr(.4s)
+
+			&:last-child
+				margin-bottom 0

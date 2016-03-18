@@ -1,0 +1,80 @@
+.supplier
+	margin-top 33px
+	text-align center
+	margin-bottom 16px
+
+	&__title
+		padding-top 20px
+		padding-bottom 16px
+		font-size 24px
+		font-family font-bold
+		border-top 2px dotted border
+
+	&__carousel-wrap
+		position relative
+		margin-bottom 5px
+		padding-x(48px)
+
+		.owl-prev,
+		.owl-next
+			position absolute
+			bottom 15px
+			display block
+			height 33px
+			width 35px
+			text-indent 100%
+			white-space nowrap
+			overflow hidden
+			cursor pointer
+
+
+			&:hover,
+			&:focus
+				opacity-strong()
+
+		.owl-next
+			left 0
+			background transparent url(images/static/arr-left.png) 0 0 no-repeat
+			background-size cover
+
+		.owl-prev
+			right 0
+			background transparent url(images/static/arr-right.png) 0 0 no-repeat
+			background-size cover
+
+	.owl-stage
+		background light
+		border-bottom 2px dotted border
+
+	&__bottom-link
+		display inline-block
+		padding-y(10px)
+		color main
+		font-size 18px
+		text-decoration none
+
+		&:hover,
+		&Lfocus
+			text-decoration underline
+
+
+	//styles for single item
+	.item
+		text-align center
+		overflow hidden
+
+	&__item-link
+		display table
+		width 100%
+		table-layout fixed
+
+	&__item-img-wrap
+		display table-cell
+		height 60px
+		vertical-align middle
+
+	&__item-img
+		display inline-block !important
+		max-height 100%
+		width auto !important
+		max-width 100%
