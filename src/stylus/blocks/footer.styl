@@ -1,0 +1,86 @@
+.footer
+	background light
+
+	&__logo-row
+		position relative
+		padding-top 42px
+		padding-bottom 22px
+		text-align center
+		background-color brand-light-3
+
+	&__logo
+		position absolute
+		top -40px
+		left 0
+		right 0
+		margin-x(auto)
+		display block
+		height 80px
+		width 80px
+		background-color brand-light-3
+		border 18px solid brand-light-3
+		border-radius(50%)
+
+		img
+			width 100%
+
+	&__logo-links
+		display inline-block
+		clearfix()
+
+		li
+			float right
+			margin-left 16px
+
+			+below(tablet)
+				float none
+				margin-right 0
+				margin-bottom 5px
+				text-align center
+
+			&:last-child
+				margin-right 0
+
+			a
+				font-size 18px
+				line-height 23px
+				color brand-dark
+				text-decoration none
+
+				&:hover,
+				&:focus
+					text-decoration underline
+
+	&__bottomline
+		padding-top 11px
+		padding-bottom 6px
+		color light
+		background brand-dark
+
+		+below(tablet)
+			text-align center
+
+	&__copyright
+		line-height 16px
+
+	&__bottomline-tagline
+		font-size 24px
+		text-align center
+
+		+below(tablet)
+			padding-y(15px)
+
+	&__developer
+		display block
+		color light
+		line-height 16px
+		text-align left
+		text-decoration none
+
+		+below(tablet)
+			text-align center
+
+		&:hover,
+		&:focus
+			text-decoration underline
+

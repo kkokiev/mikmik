@@ -1,0 +1,33 @@
+.header-user-list
+	display inline-block
+	margin-left -10px
+	clearfix()
+
+	+below(large)
+		margin-left 0px
+
+	&__item
+		float right
+		padding-top 20px
+		padding-bottom 3px
+		padding-x(10px)
+		-webkit-border-bottom-left-radius 5px
+		-moz-border-bottom-left-radius 5px
+		border-bottom-left-radius 5px
+		-webkit-border-bottom-right-radius 5px
+		-moz-border-bottom-right-radius 5px
+		border-bottom-right-radius 5px
+		tr(.4s)
+
+		&:hover
+			background brand-light-1
+
+			+below(large)
+				&:hover
+					background transparent
+
+	&__link
+		display inline-block
+		font-size 18px
+		color dark
+		text-decoration none

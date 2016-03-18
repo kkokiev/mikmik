@@ -1,0 +1,26 @@
+.search__wrap {
+  position: relative;
+}
+.search__wrap:after {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: block;
+  height: 28px;
+  width: 21px;
+  background: transparent url("images/static/loupe.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.search__input {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding-right: 18px;
+  padding-left: 40px;
+  font-size: 18px;
+  border: none;
+}
+/*# sourceMappingURL=src/stylus/blocks/search.css.map */

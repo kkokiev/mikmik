@@ -1,0 +1,8 @@
+.body {
+  direction: rtl;
+}
+[class*='col-'] {
+  min-height: 1px;
+  float: right;
+}
+/*# sourceMappingURL=src/stylus/rtl/rtl.css.map */

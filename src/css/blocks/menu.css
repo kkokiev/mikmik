@@ -1,0 +1,29 @@
+.menu {
+  vertical-align: top;
+  text-align: center;
+above(large)
+below(large)
+}
+.menu > li {
+  float: right;
+  display: block;
+below(large)
+}
+.menu > li > a {
+  display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 9px;
+  color: light;
+  font-size: 30px;
+  line-height: 34px;
+  text-decoration: none;
+below(large)
+}
+.menu > li > a:hover,
+.menu > li > a:focus {
+  color: brand-light-1;
+}
+.menu > li.active > a {
+  color: brand-light-1;
+}
+/*# sourceMappingURL=src/stylus/blocks/menu.css.map */

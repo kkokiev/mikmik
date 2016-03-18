@@ -1,0 +1,85 @@
+.carousel__title {
+  padding-top: 16px;
+  padding-bottom: 13px;
+  font-size: 24px;
+  text-align: center;
+}
+.carousel__body {
+  background: light;
+}
+.carousel__wrap {
+  position: relative;
+below(smallest)
+}
+.carousel__wrap .owl-prev,
+.carousel__wrap .owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: block;
+  height: 76px;
+  width: 41px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+below(smallest)
+}
+.carousel__wrap .owl-next {
+  left: 0;
+  background: transparent url("images/static/left.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.carousel__wrap .owl-prev {
+  right: 0;
+  background: transparent url("images/static/right.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.carousel .owl-carousel .owl-stage-outer {
+  padding-top: 15px;
+}
+.carousel .item {
+  text-align: center;
+  overflow: hidden;
+}
+.carousel__item {
+  display: inline-block;
+  width: 100%;
+  max-width: 206px;
+  border-bottom: 3px solid brand-light-2;
+}
+.carousel__item-img-wrap {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.carousel__item-img-inner-wrap {
+  display: table-cell;
+  height: 176px;
+  vertical-align: middle;
+}
+.carousel__item-img {
+  display: inline-block !important;
+  max-height: 100%;
+  width: auto !important;
+  max-width: 100%;
+}
+.carousel__btn-wrap {
+  margin-bottom: 15px;
+}
+.carousel__btn {
+  display: inline-block;
+  width: 100%;
+  color: light;
+  font-size: 15px;
+  text-decoration: none;
+  background: btn;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carousel__btn:hover,
+.carousel__btn:focus {
+  background: brand-dark;
+}
+/*# sourceMappingURL=src/stylus/blocks/carousel.css.map */

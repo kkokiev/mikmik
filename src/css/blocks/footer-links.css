@@ -1,0 +1,37 @@
+.footer-links {
+  padding-top: 11px;
+  padding-bottom: 50px;
+below(medium)
+}
+.footer-links__item {
+  float: right;
+  width: 16.66%;
+  padding-left: 10px;
+below(medium)
+below(smallest)
+}
+.footer-links__title {
+  margin-bottom: 24px;
+  color: brand-dark;
+  font-size: 24px;
+  line-height: 28px;
+}
+.footer-links__title a {
+  color: brand-dark;
+  text-decoration: none;
+}
+.footer-links__title a:hover,
+.footer-links__title a:focus {
+  text-decoration: underline;
+}
+.footer-links__list a {
+  color: main;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.footer-links__list a:hover,
+.footer-links__list a:focus {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=src/stylus/blocks/footer-links.css.map */

@@ -1,0 +1,35 @@
+.cart
+	position relative
+	display inline-block
+	height 50px
+	width 62px
+	text-align right
+
+	&:hover,
+	&:focus
+		opacity-light()
+
+	&__label
+		position absolute
+		top 0
+		left 0
+		display inline-block
+		height 27px
+		width 27px
+		color light
+		font-size 18px
+		line-height 30px
+		text-align center
+		border-radius(50%)
+		background label
+
+	&__icon
+		display inline-block
+		height 40px
+		width 40px
+		margin-top 10px
+		background-color transparent
+		background-image: url(images/static/cart.png)
+		background-position: 0 0
+		background-size cover
+		background-repeat no-repeat

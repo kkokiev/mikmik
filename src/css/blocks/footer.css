@@ -1,0 +1,73 @@
+.footer {
+  background: light;
+}
+.footer__logo-row {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 22px;
+  text-align: center;
+  background-color: brand-light-3;
+}
+.footer__logo {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-color: brand-light-3;
+  border: 18px solid brand-light-3;
+}
+.footer__logo img {
+  width: 100%;
+}
+.footer__logo-links {
+  display: inline-block;
+}
+.footer__logo-links li {
+  float: right;
+  margin-left: 16px;
+below(tablet)
+}
+.footer__logo-links li:last-child {
+  margin-right: 0;
+}
+.footer__logo-links li a {
+  font-size: 18px;
+  line-height: 23px;
+  color: brand-dark;
+  text-decoration: none;
+}
+.footer__logo-links li a:hover,
+.footer__logo-links li a:focus {
+  text-decoration: underline;
+}
+.footer__bottomline {
+  padding-top: 11px;
+  padding-bottom: 6px;
+  color: light;
+  background: brand-dark;
+below(tablet)
+}
+.footer__copyright {
+  line-height: 16px;
+}
+.footer__bottomline-tagline {
+  font-size: 24px;
+  text-align: center;
+below(tablet)
+}
+.footer__developer {
+  display: block;
+  color: light;
+  line-height: 16px;
+  text-align: left;
+  text-decoration: none;
+below(tablet)
+}
+.footer__developer:hover,
+.footer__developer:focus {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=src/stylus/blocks/footer.css.map */
