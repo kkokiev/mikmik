@@ -2846,11 +2846,11 @@ img {
   overflow: hidden;
   cursor: pointer;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 660px) {
   .carousel__wrap .owl-prev,
   .carousel__wrap .owl-next {
-    height: 38px;
-    width: 20px;
+    height: 30px;
+    width: 16px;
   }
 }
 .carousel__wrap .owl-prev:hover,
@@ -2861,13 +2861,19 @@ img {
 }
 .carousel__wrap .owl-next {
   left: 0;
-  background: transparent url("images/static/left.png") 0 0 no-repeat;
-  background-size: cover;
+  background: transparent url("images/static/left.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 .carousel__wrap .owl-prev {
   right: 0;
-  background: transparent url("images/static/right.png") 0 0 no-repeat;
-  background-size: cover;
+  background: transparent url("images/static/right.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 .carousel .owl-carousel .owl-stage-outer {
   padding-top: 15px;
@@ -2887,10 +2893,20 @@ img {
   width: 100%;
   text-align: center;
 }
+@media only screen and (max-width: 660px) {
+  .carousel__item-img-wrap {
+    margin-bottom: 10px;
+  }
+}
 .carousel__item-img-inner-wrap {
   display: table-cell;
   height: 176px;
   vertical-align: middle;
+}
+@media only screen and (max-width: 660px) {
+  .carousel__item-img-inner-wrap {
+    height: 100px;
+  }
 }
 .carousel__item-img {
   display: inline-block !important;
@@ -2932,6 +2948,11 @@ img {
   width: 62px;
   text-align: right;
 }
+@media only screen and (max-width: 600px) {
+  .cart {
+    height: 40px;
+  }
+}
 .cart:hover,
 .cart:focus {
   opacity: 0.8;
@@ -2957,19 +2978,29 @@ img {
   height: 40px;
   width: 40px;
   margin-top: 10px;
-  background-color: transparent;
   background-image: url("images/static/cart.png");
-  background-position: 0 0;
-  background-size: cover;
+  background-color: transparent;
+  background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .cart__icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
 }
 .container_wide {
   width: 1030px;
 }
 @media only screen and (max-width: 1100px) {
   .container_wide {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 .footer-links {
@@ -3047,6 +3078,12 @@ img {
   text-align: center;
   background-color: #fff080;
 }
+@media only screen and (max-width: 768px) {
+  .footer__logo-row {
+    padding-top: 38px;
+    padding-bottom: 15px;
+  }
+}
 .footer__logo {
   position: absolute;
   top: -40px;
@@ -3078,22 +3115,20 @@ img {
   float: right;
   margin-left: 16px;
 }
-@media only screen and (max-width: 768px) {
-  .footer__logo-links li {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-}
 .footer__logo-links li:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 .footer__logo-links li a {
   font-size: 18px;
   line-height: 23px;
   color: #243276;
   text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .footer__logo-links li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .footer__logo-links li a:hover,
 .footer__logo-links li a:focus {
@@ -3148,6 +3183,11 @@ img {
   clear: both;
   content: '';
 }
+@media only screen and (max-width: 600px) {
+  .header-list {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .header-list {
     margin-right: 0;
@@ -3161,14 +3201,21 @@ img {
   padding-right: 10px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+@media only screen and (max-width: 768px) {
+  .header-list__item {
+    padding-top: 10px;
+  }
 }
 .header-list__item:hover {
   background: #ffdf7f;
@@ -3198,6 +3245,11 @@ img {
     margin-left: 0px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .header-user-list {
+    margin-top: -1px;
+  }
+}
 .header-user-list__item {
   float: right;
   padding-top: 20px;
@@ -3206,14 +3258,21 @@ img {
   padding-right: 10px;
   -webkit-border-bottom-left-radius: 5px;
   -moz-border-bottom-left-radius: 5px;
+  -o-border-bottom-left-radius: 5px;
   border-bottom-left-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-bottom-right-radius: 5px;
+  -o-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+@media only screen and (max-width: 768px) {
+  .header-user-list__item {
+    padding-top: 10px;
+  }
 }
 .header-user-list__item:hover {
   background: #ffdf7f;
@@ -3223,15 +3282,30 @@ img {
     background: transparent;
   }
 }
+@media only screen and (max-width: 600px) {
+  .header-user-list__item:hover:hover {
+    background: #ffdf7f;
+  }
+}
 .header-user-list__link {
   display: inline-block;
   font-size: 18px;
   color: #231f20;
   text-decoration: none;
 }
+@media only screen and (max-width: 480px) {
+  .header-user-list__link {
+    font-size: 12px;
+  }
+}
 .header {
   padding-bottom: 25px;
   border-top: 5px solid #ffdf7f;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 5px;
+  }
 }
 .header__links {
   margin-bottom: 1px;
@@ -3260,6 +3334,9 @@ img {
   background-color: transparent;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 @media only screen and (max-width: 768px) {
@@ -3356,6 +3433,11 @@ img {
   width: 100%;
   max-width: 250px;
 }
+@media only screen and (max-width: 768px) {
+  .logo {
+    max-width: 160px;
+  }
+}
 .logo__link {
   display: inline-block;
   color: #243276;
@@ -3371,6 +3453,11 @@ img {
   padding-right: 4px;
   font-size: 24px;
   text-align: left;
+}
+@media only screen and (max-width: 768px) {
+  .logo__text {
+    font-size: 16px;
+  }
 }
 .ltr {
   direction: ltr;
@@ -3483,8 +3570,20 @@ img {
   display: block;
   height: 28px;
   width: 21px;
-  background: transparent url("images/static/loupe.png") 0 0 no-repeat;
+  background-image: url("images/static/loupe.png");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+  .search__wrap:after {
+    height: 14px;
+    width: 10px;
+  }
 }
 .search__input {
   position: relative;
@@ -3496,6 +3595,12 @@ img {
   padding-left: 40px;
   font-size: 18px;
   border: none;
+}
+@media only screen and (max-width: 600px) {
+  .search__input {
+    padding-top: 6px;
+    padding-bottom: 5px;
+  }
 }
 .supplier {
   margin-top: 33px;
@@ -3535,13 +3640,19 @@ img {
 }
 .supplier__carousel-wrap .owl-next {
   left: 0;
-  background: transparent url("images/static/arr-left.png") 0 0 no-repeat;
-  background-size: cover;
+  background: transparent url("images/static/arr-left.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 .supplier__carousel-wrap .owl-prev {
   right: 0;
-  background: transparent url("images/static/arr-right.png") 0 0 no-repeat;
-  background-size: cover;
+  background: transparent url("images/static/arr-right.png") center center no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 .supplier .owl-stage {
   background: #fff;

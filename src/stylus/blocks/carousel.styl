@@ -30,9 +30,9 @@
 			overflow hidden
 			cursor pointer
 
-			+below(smallest)
-				height 38px
-				width 20px
+			+below(mobile)
+				height 30px
+				width 16px
 
 			&:hover,
 			&:focus
@@ -40,13 +40,13 @@
 
 		.owl-next
 			left 0
-			background transparent url(images/static/left.png) 0 0 no-repeat
-			background-size cover
+			background transparent url(images/static/left.png) center center no-repeat
+			bg-size(contain)
 
 		.owl-prev
 			right 0
-			background transparent url(images/static/right.png) 0 0 no-repeat
-			background-size cover
+			background transparent url(images/static/right.png) center center no-repeat
+			bg-size(contain)
 
 	.owl-carousel .owl-stage-outer
 		padding-top 15px
@@ -67,10 +67,16 @@
 		width 100%
 		text-align center
 
+		+below(mobile)
+			margin-bottom 10px
+
 	&__item-img-inner-wrap
 		display table-cell
 		height 176px
 		vertical-align middle
+
+		+below(mobile)
+			height 100px
 
 	&__item-img
 		display inline-block !important

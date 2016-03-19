@@ -11,8 +11,12 @@
 			display block
 			height 28px
 			width 21px
-			background transparent url(images/static/loupe.png) 0 0 no-repeat
-			background-size cover
+			background-image url(images/static/loupe.png)
+			bg-image()
+
+			+below(600px)
+				height 14px
+				width 10px
 
 	&__input
 		position relative
@@ -24,4 +28,8 @@
 		padding-left 40px
 		font-size 18px
 		border none
+
+		+below(600px)
+			padding-top 6px
+			padding-bottom 5px
 

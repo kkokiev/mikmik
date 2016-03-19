@@ -3,6 +3,9 @@
 	width 100%
 	max-width 250px
 
+	+below(tablet)
+		max-width 160px
+
 	&__link
 		display inline-block
 		color brand-dark
@@ -17,3 +20,6 @@
 		padding-x(4px)
 		font-size 24px
 		text-align left
+
+		+below(tablet)
+			font-size 16px

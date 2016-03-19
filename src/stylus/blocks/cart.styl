@@ -5,6 +5,9 @@
 	width 62px
 	text-align right
 
+	+below(600px)
+		height 40px
+
 	&:hover,
 	&:focus
 		opacity-light()
@@ -28,8 +31,10 @@
 		height 40px
 		width 40px
 		margin-top 10px
-		background-color transparent
 		background-image: url(images/static/cart.png)
-		background-position: 0 0
-		background-size cover
-		background-repeat no-repeat
+		bg-image()
+
+		+below(600px)
+			height 30px
+			width 30px
+			margin-right 10px

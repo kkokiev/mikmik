@@ -6,6 +6,9 @@
 	+below(large)
 		margin-left 0px
 
+	+below(600px)
+		margin-top -1px
+
 	&__item
 		float right
 		padding-top 20px
@@ -13,11 +16,16 @@
 		padding-x(10px)
 		-webkit-border-bottom-left-radius 5px
 		-moz-border-bottom-left-radius 5px
+		-o-border-bottom-left-radius 5px
 		border-bottom-left-radius 5px
 		-webkit-border-bottom-right-radius 5px
 		-moz-border-bottom-right-radius 5px
+		-o-border-bottom-right-radius 5px
 		border-bottom-right-radius 5px
 		tr(.4s)
+
+		+below(tablet)
+			padding-top 10px
 
 		&:hover
 			background brand-light-1
@@ -26,8 +34,15 @@
 				&:hover
 					background transparent
 
+			+below(600px)
+				&:hover
+					background brand-light-1
+
 	&__link
 		display inline-block
 		font-size 18px
 		color dark
 		text-decoration none
+
+		+below(smallest)
+			font-size 12px

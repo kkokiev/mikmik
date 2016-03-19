@@ -3,6 +3,9 @@
 	clearfix()
 	margin-right -10px
 
+	+below(600px)
+		display none
+
 	+below(large)
 		margin-right 0
 
@@ -13,11 +16,16 @@
 		padding-x(10px)
 		-webkit-border-bottom-left-radius 5px
 		-moz-border-bottom-left-radius 5px
+		-o-border-bottom-left-radius 5px
 		border-bottom-left-radius 5px
 		-webkit-border-bottom-right-radius 5px
 		-moz-border-bottom-right-radius 5px
+		-o-border-bottom-right-radius 5px
 		border-bottom-right-radius 5px
 		tr(.4s)
+
+		+below(tablet)
+			padding-top 10px
 
 		&:hover
 			background brand-light-1
