@@ -16,7 +16,7 @@ $(function () {
 
 	//setup navbar
 	var $navBtn = $('#navbar-btn'),
-		$navMenu = $('.menu');
+		$navMenu = $('.b-menu');
 
 	$navBtn.on('click', function(event) {
 		event.preventDefault();
@@ -31,8 +31,7 @@ $(function () {
 
 	//setup product and supllier carousels
 	$('#carousel-1 .owl-carousel').owlCarousel({
-		rtl: true,
-		navContainer: '#carousel-1 .carousel__wrap',
+		navContainer: '#carousel-1 .b-carousel__wrap',
 		nav: true,
 		loop: true,
 		margin: 18,
@@ -56,8 +55,7 @@ $(function () {
 	});
 
 	$('#carousel-2 .owl-carousel').owlCarousel({
-		rtl: true,
-		navContainer: '#carousel-2 .carousel__wrap',
+		navContainer: '#carousel-2 .b-carousel__wrap',
 		nav: true,
 		loop: true,
 		margin: 18,
@@ -81,8 +79,7 @@ $(function () {
 	});
 
 	$('#carousel-3 .owl-carousel').owlCarousel({
-		rtl: true,
-		navContainer: '#carousel-3 .carousel__wrap',
+		navContainer: '#carousel-3 .b-carousel__wrap',
 		nav: true,
 		loop: true,
 		margin: 18,
@@ -106,8 +103,7 @@ $(function () {
 	});
 
 	$('#carousel-4 .owl-carousel').owlCarousel({
-		rtl: true,
-		navContainer: '#carousel-4 .carousel__wrap',
+		navContainer: '#carousel-4 .b-carousel__wrap',
 		nav: true,
 		loop: true,
 		margin: 18,
@@ -131,8 +127,7 @@ $(function () {
 	});
 
 	$('#supplier .owl-carousel').owlCarousel({
-		rtl: true,
-		navContainer: '#supplier .supplier__carousel-wrap',
+		navContainer: '#supplier .b-supplier__carousel-wrap',
 		nav: true,
 		loop: true,
 		margin: 100,
@@ -158,6 +153,31 @@ $(function () {
 			}
 		}
 	});
+
+	//setup navbar
+	var $linksBtn = $('#footer-links-btn'),
+		$linksMenu = $('#footer-links'),
+		$linksSubmenuBtn = $('.b-footer-links__submenu-btn');
+
+	$linksBtn.on('click', function(event) {
+		event.preventDefault();
+
+		if( $linksMenu.hasClass('js-links-open')) {
+			$linksMenu.removeClass('js-links-open').slideUp();
+		} else {
+			$linksMenu.addClass('js-links-open').slideDown();
+		}
+	});
+
+	$linksSubmenuBtn.on('click', function(event) {
+
+		var $subLinksSubmenu = $(this).parent().siblings('.b-footer-links__list');
+		if( $subLinksSubmenu.hasClass('js-sublinks-open')) {
+			$subLinksSubmenu.removeClass('js-sublinks-open').slideUp();
+		} else {
+			$subLinksSubmenu.addClass('js-sublinks-open').slideDown();
+		}
+	})
 
 });
 

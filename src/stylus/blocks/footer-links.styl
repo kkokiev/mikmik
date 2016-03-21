@@ -1,26 +1,61 @@
-.footer-links
+.b-footer-links
 	padding-top 11px
 	padding-bottom 50px
-	clearfix()
 
-	+below(medium)
-		padding-top 40px
+	+below(large)
+		padding-bottom 0px
+
+	&__list-wrap
+		clearfix()
+
+		+above(large)
+			display block !important
+
+		+below(large)
+			display none
+			padding-bottom 40px
+
+
+	&__btn
+		display inline-block
+		float right
+		margin-top 10px
+		margin-right 10px
+		margin-bottom 20px
+		height 30px
+		width 40px
+		text-decoration none
+
+		+below(large)
+			display block
+
+		&:hover,
+		&:focus
+			span
+				background btn
+
+		span
+			display block
+			height 6px
+			width 100%
+			margin-bottom 6px
+			background brand-dark
+			tr(.4s)
+
+			&:last-child
+				margin-bottom 0
 
 	&__item
 		float right
 		width 16.66%
 		padding-left 10px
 
-		+below(medium)
-			width 50%
-			margin-bottom 30px
+		+below(large)
+			width 100%
+			padding-left 0
 			text-align center
 
-			&:nth-child(2n+3)
-				clear both
 
-		+below(smallest)
-			width 100%
 
 	&__title
 		margin-bottom 24px
@@ -28,13 +63,13 @@
 		font-size 24px
 		line-height 28px
 
-		&_empty
-			+below(smallest)
-				height 0
-				margin-top -30px
-				margin-bottom 0
+		+below(large)
+			margin-bottom 6px
+			border-bottom 1px solid brand-dark
 
 		a
+			font-size 24px
+			line-height 28px
 			color brand-dark
 			text-decoration none
 
@@ -42,7 +77,38 @@
 			&:focus
 				text-decoration underline
 
+	&__submenu-btn
+		display none
+		height 15px
+		width 26px
+		width 20px
+		margin-left 10px
+		cursor pointer
+
+		+below(large)
+			display inline-block
+
+		span
+			position relative
+			top 1px
+			display block
+			height 3px
+			width 100%
+			margin-bottom 3px
+			background brand-dark
+			tr(.4s)
+
+			&:last-child
+				margin-bottom 0
+
 	&__list
+
+		+above(large)
+			display block !important
+
+		+below(large)
+			display none
+			padding-bottom 20px
 
 		a
 			color main
